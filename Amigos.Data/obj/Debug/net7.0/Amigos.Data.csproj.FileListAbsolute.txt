@@ -22,3 +22,4 @@ D:\Programming\ASP.NET\TP1 - Amigos App\Amigos\Amigos.Data\obj\Debug\net7.0\refi
 D:\Programming\ASP.NET\TP1 - Amigos App\Amigos\Amigos.Data\obj\Debug\net7.0\Amigos.Data.pdb
 D:\Programming\ASP.NET\TP1 - Amigos App\Amigos\Amigos.Data\obj\Debug\net7.0\Amigos.Data.genruntimeconfig.cache
 D:\Programming\ASP.NET\TP1 - Amigos App\Amigos\Amigos.Data\obj\Debug\net7.0\ref\Amigos.Data.dll
+D:\Programming\ASP.NET\TP1 - Amigos App\Amigos\Amigos.Data\bin\Debug\net7.0\appsettings.json
