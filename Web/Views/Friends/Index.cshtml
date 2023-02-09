@@ -1,0 +1,80 @@
+﻿@model IEnumerable<Amigos.Application.ViewModels.FriendViewModel>
+@{
+}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css">
+    <title>Friends</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="collapse navbar-collapse" style="margin-left: 15px;">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" style="color: white; font-weight: bolder;" asp-action="Index"
+                       asp-controller="Friends">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" style="color: white; font-weight: bolder;" asp-action="FriendForm">
+                        Add
+                        Friend
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" style="color: white; font-weight: bolder;" asp-action="AllFriends">All Friends</a>
+                </li>
+            </ul>
+            <form asp-action="Search" method="get" class="form-inline my-2 my-lg-0" style="display: flex;">
+
+                <input class="form-control mr-sm-2" type="text" name="name" placeholder="Search" aria-label="Search">
+                <input class="btn btn-outline-info my-2 my-sm-0" type="submit" style="margin-left: 15px;" />
+            </form>
+        </div>
+    </nav>
+    <h1 class="text-center">Welcome to your Birthday Agenda</h1>
+
+    <div class="my-container" style="width: 660px;">
+        <h3>Birthdays</h3>
+        <h3>Birthday List</h3>
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Birthdate</th>
+                    <th scope="col">Time To Birthday</th>
+                    <th scope="col">Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var friend in Model)
+                {
+
+                        <tr>
+                            <td>
+                                @friend.FirstName
+                            </td>
+                            <td>
+                                @friend.LastName
+                            </td>
+                            <td>
+                                @friend.Email
+                            </td>
+                            <td>
+                                @friend.BirthDate
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+
+    </div>
+</body>
+
+</html>
