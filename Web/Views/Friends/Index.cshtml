@@ -1,5 +1,6 @@
-﻿@model IEnumerable<Amigos.Application.ViewModels.FriendViewModel>
+﻿@model List<Amigos.Application.ViewModels.FriendViewModel>
 @{
+    Layout = null;
 }
 
 <html lang="en">
@@ -36,43 +37,56 @@
             </form>
         </div>
     </nav>
-    <h1 class="text-center">Welcome to your Birthday Agenda</h1>
+    <h1 class="text-center">Welcome to your Friends Agenda</h1>
 
     <div class="my-container" style="width: 660px;">
-        <h3>Birthdays</h3>
-        <h3>Birthday List</h3>
         <table class="table table-dark">
             <thead>
                 <tr>
+                    <th scope="col">Select</th>
                     <th scope="col">First Name</th>
                     <th scope="col">Last Name</th>
-                    <th scope="col">Birthdate</th>
-                    <th scope="col">Time To Birthday</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">BirthDate</th>
                     <th scope="col">Options</th>
                 </tr>
             </thead>
-            <tbody>
-                @foreach (var friend in Model)
+            <h3>Friends List 1</h3>
+            @using (Html.BeginForm("Index", "Friends"))
+            {
+                for(int i = 0; i< Model.Count; i++)
                 {
-
-                        <tr>
-                            <td>
-                                @friend.FirstName
-                            </td>
-                            <td>
-                                @friend.LastName
-                            </td>
-                            <td>
-                                @friend.Email
-                            </td>
-                            <td>
-                                @friend.BirthDate
-                            </td>
-                        </tr>
-                    }
+                    <tr>
+                        <td>
+                            @if(Model[i].IsChecked == true){
+                                @Html.CheckBoxFor(m=> m[i].IsChecked, true)
+                                
+                            }else{
+                                @Html.CheckBoxFor(m=> m[i].IsChecked, false)
+                            }
+                        </td>
+                        <td>
+                            @Model[i].FirstName
+                            @Html.HiddenFor(m => m[i].FirstName)
+                        </td>
+                        <td>
+                            @Model[i].LastName
+                            @Html.HiddenFor(m => m[i].LastName)
+                        </td>
+                        <td>
+                            @Model[i].Email
+                            @Html.HiddenFor(m => m[i].Email)
+                        </td>
+                        <td>
+                            @Model[i].BirthDate
+                            @Html.HiddenFor(m => m[i].BirthDate)
+                        </td>
+                        
+                    </tr>
                 }
-            </tbody>
-        </table>
+                <input type="submit" value="submit"/>
+            }
+       
 
     </div>
 </body>

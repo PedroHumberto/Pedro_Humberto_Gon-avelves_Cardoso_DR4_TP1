@@ -10,6 +10,7 @@ namespace Amigos.Data.Data
         {
                 
         }
+
         public DbSet<Friend> Friends { get; set; }
     }
 }

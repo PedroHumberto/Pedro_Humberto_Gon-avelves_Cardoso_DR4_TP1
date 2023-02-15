@@ -1,17 +1,21 @@
 ﻿using Amigos.Application.Interfaces;
 using Amigos.Application.ViewModels;
 using Amigos.Domain.Friend;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using AutoMapper;
 
 namespace Amigos.Data.Services
 {
     public class FriendService : IFriendService
     {
         public IFriendRepository _repository;
+        public IMapper _mapper;
+
+        public FriendService(IFriendRepository repository, IMapper mapper)
+        {
+            _repository = repository;
+            _mapper = mapper;
+        }
+
         public async Task<Friend> AddFriendAsync(Friend friend)
         {
 
@@ -25,9 +29,13 @@ namespace Amigos.Data.Services
             throw new NotImplementedException();
         }
 
-        public async Task<List<Friend>> GetAllFriendAsync()
+        public async Task<List<FriendViewModel>> GetAllFriendAsync()
         {
-            return await _repository.GetAllFriendAsync();
+            var friendList = await _repository.GetAllFriendAsync();
+
+            var viewModel = _mapper.Map<List<FriendViewModel>>(friendList);
+
+            return viewModel;
         }
     }
 }

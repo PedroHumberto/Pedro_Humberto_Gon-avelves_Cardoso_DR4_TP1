@@ -22,25 +22,8 @@ namespace Amigos.Domain.Friend
 
         public string Email { get; set; }
         public DateTime BirthDate { get; set; }
-        public bool IsSelected { get; set; } = false;
 
 
-
-        public void SelectFriend()
-        {
-            
-            if (IsSelected == true)
-            {
-                IsSelected = false;
-            }
-            else
-            {
-                IsSelected = true;
-            }
-        }
-
-
-
-
+      
     }
 }

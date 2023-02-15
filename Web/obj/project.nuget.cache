@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "+5Ht/ZNVzxZgAtNMYOhFJRm4L5r08j9klR2Mo3bkSnxW8VqunP5MPbeiEZVCkMPu9b0K5gOH817fDaRXSt4pzA==",
+  "dgSpecHash": "dtFntIXhi+JhsOWFQw1jMB15YA+YRWoHs9DCDRCEJMM2moDuv6CNoFyncjwtUFWAXRuETCUDDftEo3BpJErQ/A==",
   "success": true,
   "projectFilePath": "D:\\Programming\\ASP.NET\\TP1 - Amigos App\\Amigos\\Web\\Web.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\pedro\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\pedro\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

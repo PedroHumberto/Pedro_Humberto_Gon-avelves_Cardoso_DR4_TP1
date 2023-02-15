@@ -3,7 +3,7 @@ using Amigos.Application.ViewModels;
 using Amigos.Data.Data;
 using Amigos.Domain.Friend;
 using Microsoft.EntityFrameworkCore;
-
+using Microsoft.IdentityModel.Tokens;
 
 namespace Amigos.Data.Repository
 {
@@ -31,7 +31,10 @@ namespace Amigos.Data.Repository
 
         public async Task<List<Friend>> GetAllFriendAsync()
         {
-           return await _context.Friends.ToListAsync();
+            var allFriends = await _context.Friends.ToListAsync();
+            if (allFriends.IsNullOrEmpty()) return new List<Friend>();
+
+            return await _context.Friends.ToListAsync();
         }
     }
 }

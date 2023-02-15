@@ -5,11 +5,6 @@ using Amigos.Data.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Amigos.Data.InversionOfControl
 {
@@ -23,6 +18,8 @@ namespace Amigos.Data.InversionOfControl
             //Interfaces Injections
             services.AddScoped<IFriendRepository, FriendRepository>();
             services.AddScoped<IFriendService, FriendService>();
+
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
         }
     }

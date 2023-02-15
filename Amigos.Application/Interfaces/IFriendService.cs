@@ -10,7 +10,7 @@ namespace Amigos.Application.Interfaces
 {
     public interface IFriendService
     {
-        Task<List<Friend>> GetAllFriendAsync();
+        Task<List<FriendViewModel>> GetAllFriendAsync();
         Task<Friend> AddFriendAsync(Friend model);
         void DeleteFriendAsync(Guid id);
     }

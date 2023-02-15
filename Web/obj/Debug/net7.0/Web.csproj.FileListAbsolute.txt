@@ -275,3 +275,5 @@ D:\Programming\ASP.NET\TP1 - Amigos App\Amigos\Web\obj\Debug\net7.0\refint\Web.d
 D:\Programming\ASP.NET\TP1 - Amigos App\Amigos\Web\obj\Debug\net7.0\Web.pdb
 D:\Programming\ASP.NET\TP1 - Amigos App\Amigos\Web\obj\Debug\net7.0\Web.genruntimeconfig.cache
 D:\Programming\ASP.NET\TP1 - Amigos App\Amigos\Web\obj\Debug\net7.0\ref\Web.dll
+D:\Programming\ASP.NET\TP1 - Amigos App\Amigos\Web\bin\Debug\net7.0\AutoMapper.dll
+D:\Programming\ASP.NET\TP1 - Amigos App\Amigos\Web\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

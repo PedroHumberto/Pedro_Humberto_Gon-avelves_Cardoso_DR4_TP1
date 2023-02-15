@@ -1,1 +1,1 @@
-Revisar o Repository e Service -> Trocar o tipo de retorno, Model e ViewModel nas interfaces tambem
+começar a trabalhar na camada web, copiei html já feito em outro TP, ver o que da pra fazer. Conferir tb bootstrap
