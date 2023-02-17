@@ -2,6 +2,7 @@
 using Amigos.Application.ViewModels;
 using Amigos.Domain.Friend;
 using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 
 namespace Amigos.Data.Services
 {
@@ -16,17 +17,20 @@ namespace Amigos.Data.Services
             _mapper = mapper;
         }
 
-        public async Task<Friend> AddFriendAsync(Friend friend)
+        public async Task<Friend> AddFriendAsync(FriendViewModel model)
         {
+            var friend = _mapper.Map<Friend>(model);
 
-            _repository.AddFriendAsync(friend);
+            await _repository.AddFriendAsync(friend);
            
             return friend;
         }
 
         public void DeleteFriendAsync(Guid id)
         {
-            throw new NotImplementedException();
+            var delete = _repository.GetAllFriendAsync().Result.FirstOrDefault(friend => friend.Id == id);
+
+            _repository.DeleteFriendAsync(delete);
         }
 
         public async Task<List<FriendViewModel>> GetAllFriendAsync()
@@ -36,6 +40,15 @@ namespace Amigos.Data.Services
             var viewModel = _mapper.Map<List<FriendViewModel>>(friendList);
 
             return viewModel;
+        }
+
+        public async Task<List<FriendViewModel>> GetSelectedFriends(List<Guid> selected)
+        {
+            var friendList = await _repository.GetAllFriendAsync();
+
+            var viewModel = _mapper.Map<List<FriendViewModel>>(friendList);
+
+            return viewModel.Where(f => selected.Contains(f.Id)).ToList();
         }
     }
 }

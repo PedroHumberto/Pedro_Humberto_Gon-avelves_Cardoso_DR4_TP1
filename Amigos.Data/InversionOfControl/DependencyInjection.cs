@@ -21,6 +21,11 @@ namespace Amigos.Data.InversionOfControl
 
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
+            
+
+            
+
+
         }
     }
 }

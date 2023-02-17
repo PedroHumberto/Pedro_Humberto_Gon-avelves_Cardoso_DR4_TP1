@@ -20,15 +20,10 @@
                     <a class="nav-link" style="color: white; font-weight: bolder;" asp-action="Index"
                        asp-controller="Friends">Home</a>
                 </li>
-                <li class="nav-item active">
+                 <li class="nav-item active">
                     <a class="nav-link" style="color: white; font-weight: bolder;" asp-action="FriendForm">
                         Add
                         Friend
-                    </a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" style="color: white; font-weight: bolder;" asp-action="FriendsEmail">
-                        Friends With Email
                     </a>
                 </li>
             </ul>
@@ -43,7 +38,7 @@
                     <th scope="col">Select</th>
                     <th scope="col">First Name</th>
                     <th scope="col">Last Name</th>
-                    <th scope="col">BirthDate</th>
+                    <th scope="col">Email</th>                    
                 </tr>
             </thead>
             <h3>Friends List</h3>
@@ -63,11 +58,11 @@
                             @friend.LastName
                             
                         </td>
-                      
                         <td>
-                            @friend.BirthDate
+                            @friend.Email
                             
                         </td>
+                        
                         
                     </tr>
                 }

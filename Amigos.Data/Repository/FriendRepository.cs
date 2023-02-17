@@ -16,16 +16,19 @@ namespace Amigos.Data.Repository
             _context = context;
         }
 
-        public async void AddFriendAsync(Friend friend)
+        public async Task<Friend> AddFriendAsync(Friend friend)
         {
-            _context.Friends.AddAsync(friend);
-            //devo ter um return?
+            await _context.Friends.AddAsync(friend);
+            await _context.SaveChangesAsync();
+
+            Console.WriteLine("Salvo no db");
+
+            return friend;
         }
 
-        public async void DeleteFriendAsync(Guid id)
+        public async void DeleteFriendAsync(Friend friend)
         {
-            var deletedFriend = await _context.Friends.FirstOrDefaultAsync(f => f.Id == id);
-            _context.Friends.Remove(deletedFriend);
+            _context.Friends.Remove(friend);
             await _context.SaveChangesAsync();
         }
 

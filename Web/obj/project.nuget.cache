@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dtFntIXhi+JhsOWFQw1jMB15YA+YRWoHs9DCDRCEJMM2moDuv6CNoFyncjwtUFWAXRuETCUDDftEo3BpJErQ/A==",
+  "dgSpecHash": "u8CfgXSVYA/DnCPqYOvz9uAouNRe84PMRZM73X1sh2fI/YM1Yj2cTHNvtZ/3FxODbaiNrxu9N8loZUf+J7VROQ==",
   "success": true,
   "projectFilePath": "D:\\Programming\\ASP.NET\\TP1 - Amigos App\\Amigos\\Web\\Web.csproj",
   "expectedPackageFiles": [
@@ -77,7 +77,7 @@
     "C:\\Users\\pedro\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
-    "C:\\Users\\pedro\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\pedro\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\nuget.common\\6.3.1\\nuget.common.6.3.1.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\nuget.configuration\\6.3.1\\nuget.configuration.6.3.1.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\nuget.dependencyresolver.core\\6.3.1\\nuget.dependencyresolver.core.6.3.1.nupkg.sha512",

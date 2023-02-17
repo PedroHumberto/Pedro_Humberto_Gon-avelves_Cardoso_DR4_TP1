@@ -3,6 +3,7 @@ using Amigos.Application.ViewModels;
 using Amigos.Domain.Friend;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json;
 using System.Net;
 using System.Text;
 using System.Web;
@@ -12,51 +13,102 @@ namespace Web.Controllers
     public class FriendsController : Controller
     {
         IFriendService _context;
-        List<FriendViewModel> selectedList = new List<FriendViewModel>();
+
 
         public FriendsController(IFriendService context)
         {
             _context = context;
         }
 
+        #region private_methods
+
+        private void SetSession(List<Guid> Selected)
+        {
+            HttpContext.Session.SetString("Selected", JsonConvert.SerializeObject(Selected));
+        }
+        private List<Guid> GetSession()
+        {
+            var selectedList = HttpContext.Session.GetString("Selected");
+            if (!string.IsNullOrEmpty(selectedList))
+            {
+                return JsonConvert.DeserializeObject<List<Guid>>(HttpContext.Session.GetString("Selected"));
+            }
+            return new List<Guid>();
+        }
+        #endregion
+
+
         public async Task<IActionResult> Index()
         {
-            Console.WriteLine(selectedList.Count);
-            if (selectedList.IsNullOrEmpty())
-            {
-               List<FriendViewModel> friendsList = await _context.GetAllFriendAsync();
-               return View(friendsList.OrderBy(f => f.FirstName).ToList());
-            }
-            
 
-            return View(selectedList.OrderBy(f => f.FirstName).ToList());
+            var session = GetSession();
+
+
+            List<FriendViewModel> friendsList = await _context.GetAllFriendAsync();
+
+            foreach(var friend in friendsList)
+            {
+                friend.IsChecked = session.Contains(friend.Id);
+            }
+
+            return View(friendsList.OrderBy(f => f.FirstName).ToList());
+
+        }
+
+        public async Task<IActionResult> FriendsEmail()
+        {
+
+            var session = GetSession();
+
+
+            List<FriendViewModel> friendsList = await _context.GetAllFriendAsync();
+
+            foreach (var friend in friendsList)
+            {
+                friend.IsChecked = session.Contains(friend.Id);
+            }
+
+
+
+            return View(friendsList.OrderBy(f => f.FirstName).ToList());
+
         }
 
         [HttpPost]
-        public ActionResult Index(List<FriendViewModel> model)
+        [Route("/friends/selected")]
+        public async Task<ActionResult> Selected(List<Guid> selected)
         {
-           
-            foreach (var friend in model)
-            {
-                if(friend.IsChecked == true)
-                {
-                    selectedList.Add(friend);
-                }
-            }
+            SetSession(selected);
+            
+            var friendList = await _context.GetSelectedFriends(selected);
+            
+            return View(friendList);
+        }
 
-            return View(selectedList.OrderBy(f => f.FirstName).ToList());
+        public async Task<IActionResult> FriendForm()
+        {
+            return View();
         }
 
         [HttpPost]
         public async Task<IActionResult> FriendForm(FriendViewModel model)
         {
-            var friend = new Friend(model.FirstName, model.LastName, model.Email, model.BirthDate);
 
-            await _context.AddFriendAsync(friend);
+            await _context.AddFriendAsync(model);
+
+
+            Console.WriteLine("Adicionado");
 
             return RedirectToAction(nameof(Index));
         }
 
+        [HttpPost]
+        public IActionResult Delete(Guid Id)
+        {
+            _context.DeleteFriendAsync(Id);
 
-    }    
+            return RedirectToAction(nameof(Index));
+        }
+
+    }
 }

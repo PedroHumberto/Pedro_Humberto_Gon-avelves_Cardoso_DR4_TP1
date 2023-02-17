@@ -7,7 +7,7 @@ namespace Amigos.Application.Interfaces
     public interface IFriendRepository
     {
         Task<List<Friend>> GetAllFriendAsync();
-        void AddFriendAsync(Friend model);
-        void DeleteFriendAsync(Guid id);
+        Task<Friend> AddFriendAsync(Friend model);
+        void DeleteFriendAsync(Friend id);
     }
 }

@@ -11,7 +11,8 @@ namespace Amigos.Application.Interfaces
     public interface IFriendService
     {
         Task<List<FriendViewModel>> GetAllFriendAsync();
-        Task<Friend> AddFriendAsync(Friend model);
+        Task<Friend> AddFriendAsync(FriendViewModel model);
         void DeleteFriendAsync(Guid id);
+        Task<List<FriendViewModel>> GetSelectedFriends(List<Guid> selected);
     }
 }
