@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programming\\ASP.NET\\TP1 - Amigos App\\Amigos\\Amigos.Application\\Amigos.Application.csproj",
+      "projectUniqueName": "D:\\Programming\\INFNET\\DOTNET\\estudosCleanArchitecture\\Amigos.Application\\Amigos.Application.csproj",
       "projectName": "Amigos.Application",
-      "projectPath": "D:\\Programming\\ASP.NET\\TP1 - Amigos App\\Amigos\\Amigos.Application\\Amigos.Application.csproj",
+      "projectPath": "D:\\Programming\\INFNET\\DOTNET\\estudosCleanArchitecture\\Amigos.Application\\Amigos.Application.csproj",
       "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-      "outputPath": "D:\\Programming\\ASP.NET\\TP1 - Amigos App\\Amigos\\Amigos.Application\\obj\\",
+      "outputPath": "D:\\Programming\\INFNET\\DOTNET\\estudosCleanArchitecture\\Amigos.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +53,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Programming\\ASP.NET\\TP1 - Amigos App\\Amigos\\Amigos.Domain\\Amigos.Domain.csproj": {
-              "projectPath": "D:\\Programming\\ASP.NET\\TP1 - Amigos App\\Amigos\\Amigos.Domain\\Amigos.Domain.csproj"
+            "D:\\Programming\\INFNET\\DOTNET\\estudosCleanArchitecture\\Amigos.Domain\\Amigos.Domain.csproj": {
+              "projectPath": "D:\\Programming\\INFNET\\DOTNET\\estudosCleanArchitecture\\Amigos.Domain\\Amigos.Domain.csproj"
             }
           }
         }

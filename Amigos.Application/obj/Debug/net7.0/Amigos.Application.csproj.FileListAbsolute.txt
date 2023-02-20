@@ -28,3 +28,18 @@ D:\Programming\ASP.NET\TP1 - Amigos App\Amigos\Amigos.Application\obj\Debug\net7
 D:\Programming\ASP.NET\TP1 - Amigos App\Amigos\Amigos.Application\obj\Debug\net7.0\refint\Amigos.Application.dll
 D:\Programming\ASP.NET\TP1 - Amigos App\Amigos\Amigos.Application\obj\Debug\net7.0\Amigos.Application.pdb
 D:\Programming\ASP.NET\TP1 - Amigos App\Amigos\Amigos.Application\obj\Debug\net7.0\ref\Amigos.Application.dll
+D:\Programming\INFNET\DOTNET\estudosCleanArchitecture\Amigos.Application\bin\Debug\net7.0\Amigos.Application.deps.json
+D:\Programming\INFNET\DOTNET\estudosCleanArchitecture\Amigos.Application\bin\Debug\net7.0\Amigos.Application.dll
+D:\Programming\INFNET\DOTNET\estudosCleanArchitecture\Amigos.Application\bin\Debug\net7.0\Amigos.Application.pdb
+D:\Programming\INFNET\DOTNET\estudosCleanArchitecture\Amigos.Application\bin\Debug\net7.0\Amigos.Domain.dll
+D:\Programming\INFNET\DOTNET\estudosCleanArchitecture\Amigos.Application\bin\Debug\net7.0\Amigos.Domain.pdb
+D:\Programming\INFNET\DOTNET\estudosCleanArchitecture\Amigos.Application\obj\Debug\net7.0\Amigos.Application.csproj.AssemblyReference.cache
+D:\Programming\INFNET\DOTNET\estudosCleanArchitecture\Amigos.Application\obj\Debug\net7.0\Amigos.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\INFNET\DOTNET\estudosCleanArchitecture\Amigos.Application\obj\Debug\net7.0\Amigos.Application.AssemblyInfoInputs.cache
+D:\Programming\INFNET\DOTNET\estudosCleanArchitecture\Amigos.Application\obj\Debug\net7.0\Amigos.Application.AssemblyInfo.cs
+D:\Programming\INFNET\DOTNET\estudosCleanArchitecture\Amigos.Application\obj\Debug\net7.0\Amigos.Application.csproj.CoreCompileInputs.cache
+D:\Programming\INFNET\DOTNET\estudosCleanArchitecture\Amigos.Application\obj\Debug\net7.0\Amigos.Application.csproj.CopyComplete
+D:\Programming\INFNET\DOTNET\estudosCleanArchitecture\Amigos.Application\obj\Debug\net7.0\Amigos.Application.dll
+D:\Programming\INFNET\DOTNET\estudosCleanArchitecture\Amigos.Application\obj\Debug\net7.0\refint\Amigos.Application.dll
+D:\Programming\INFNET\DOTNET\estudosCleanArchitecture\Amigos.Application\obj\Debug\net7.0\Amigos.Application.pdb
+D:\Programming\INFNET\DOTNET\estudosCleanArchitecture\Amigos.Application\obj\Debug\net7.0\ref\Amigos.Application.dll

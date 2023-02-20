@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "u8CfgXSVYA/DnCPqYOvz9uAouNRe84PMRZM73X1sh2fI/YM1Yj2cTHNvtZ/3FxODbaiNrxu9N8loZUf+J7VROQ==",
+  "dgSpecHash": "r5Fq+3/vrVjJkZiXCKwk5S1y4rIONPmYVplEwWTPCcXyj0JXkaHytQRPFHgpxDKl4GSj7927B3HYSS5j6DkmfA==",
   "success": true,
-  "projectFilePath": "D:\\Programming\\ASP.NET\\TP1 - Amigos App\\Amigos\\Web\\Web.csproj",
+  "projectFilePath": "D:\\Programming\\INFNET\\DOTNET\\estudosCleanArchitecture\\Web\\Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pedro\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

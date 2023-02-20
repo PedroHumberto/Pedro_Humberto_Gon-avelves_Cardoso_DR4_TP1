@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BgDcaCv/BKfXe3b0UrW/LIyfvmztvDDJJ9DyZRnadD37g+KildrmUzXOzCmk+2xxCxxH2VrV0z9TLKedfJFgEQ==",
+  "dgSpecHash": "Jv0Mfe2da+ZBuQwbUh9kiLW1UjMfTYkv/LIFbJaSFBxTJs9WtxPMEXs/7xj4+yXVzhAFlOCn9LCd3SEf+OoDyg==",
   "success": true,
-  "projectFilePath": "D:\\Programming\\ASP.NET\\TP1 - Amigos App\\Amigos\\Amigos.Application\\Amigos.Application.csproj",
+  "projectFilePath": "D:\\Programming\\INFNET\\DOTNET\\estudosCleanArchitecture\\Amigos.Application\\Amigos.Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
