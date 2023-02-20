@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Amigos.Application/1.0.0": {
+        "dependencies": {
+          "Amigos.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Amigos.Application.dll": {}
+        }
+      },
+      "Amigos.Domain/1.0.0": {
+        "runtime": {
+          "Amigos.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Amigos.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Amigos.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
